@@ -1,0 +1,6 @@
+services:
+  web:
+    image: philipsens
+    build: .
+    ports:
+      - "80:80"

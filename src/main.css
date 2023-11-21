@@ -1,0 +1,94 @@
+@import url(https://fonts.googleapis.com/css?family=Inconsolata);
+
+body {
+    background-color: #586e75;
+    font-family: 'Inconsolata', monospace;
+    font-size:16px;
+}
+
+#window {
+    border: 1px solid #93a1a1;
+    box-shadow: 0 0 15px #333;
+    width: 80%;
+    margin: auto;
+}
+
+#terminal {
+    height: calc(80vh - 25px);
+    padding: 10px;
+    color: #eee8d5;
+    overflow-y: scroll;
+    background-color: #002b36;
+}
+
+#header {
+    padding-left: 10px;
+    color: #002b36;
+    line-height: 25px;
+    height: 25px;
+    background-color: #93a1a1;
+}
+
+#header a {
+    color: #002b36;
+}
+        
+#maximize {
+	position: absolute;
+	top: 7px;
+
+}
+
+#close {
+    padding: 0 10px;
+}
+
+#header #close:hover {
+    background: red;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li:before {
+    content: "- ";
+}
+
+a {
+    color: #268bd2;
+    text-decoration: none;
+}
+
+img {
+    max-width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.a {
+    color: #859900;
+}
+
+.b {
+    color: #2aa198;
+}
+
+.c {
+    color: #dc322f;
+}
+
+.right {
+    float: right;
+}
+
+@media (max-width: 820px) {
+    #window {
+        width: 100%;
+    }
+
+    #terminal {
+        height: calc(100vh - 65px);
+    }
+}
