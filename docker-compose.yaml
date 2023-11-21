@@ -1,6 +1,0 @@
-services:
-  web:
-    image: ghcr.io/philipsens
-    build: .
-    ports:
-      - "80:80"
